@@ -1,44 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# 
-# 
-# 
-# 
-# 
 # # Medical Appointment No Shows 
 # #### *GHAIDA S. ALTUWAIJRI*
 # #### *May 21, 2020*
-
-# 
-# ## Table of Contents
-# <ul>
-# <li><a href="#intro">Introduction</a></li>
-# <li><a href="#wrangling">Data Wrangling</a></li>
-# <li><a href="#eda">Exploratory Data Analysis</a></li>
-# <li><a href="#conclusions">Conclusions</a></li>
-# <li><a href="#bibliography">Bibliography</a></li>    
-# </ul>
-
-# <a id='intro'></a>
-# ## Introduction
-# 
-# This dataset collects information from 100k medical appointments inBrazil and is focused on the question of whether or not patients showup for their appointment. A number of characteristics about the patient are included in each row.
-# - ‘ScheduledDay’ tells us on what day the patient set up their appointment.
-# - ‘Neighborhood’ indicates the location of the hospital.
-# - ‘Scholarship’ indicates whether or not the patient isenrolled in Brasilian welfare program Bolsa Família.
-# - the last column says ‘No’ if the patient showed up to their appointment, and ‘Yes’ if they did not show up
-# 
-# On this project, we aimed to explore the 'Medical Appointment No Shows' dataset from Kaggle and finding answers for these questions:
-# - what is the percentage of attending or not attending the appointments?
-# - which gender have more commitment to attend the appointment?
-# - Does age affect the attendance of appointments?
-# - Is sending reminder messages help the patient to remember and attend the appointments?
-# - Is scheduling the appointment long time before will affect attending?
-# - What factors are important for us to know in order to predict if a patient will show up for their scheduled appointment?
-
-# In[38]:
-
 
 import pandas as pd
 import numpy as np
@@ -436,24 +401,3 @@ plt.legend();
 # by doing the above calculations and visualizations, we came up that we can predict if a patient will show up for their scheduled appointment by ***Scheduling Date, Age, and Gender*** factors.
 
 # And now, we answered all of our questions by computed some statistics and created visualizations to make it easier to understand for all people.
-
-# <a id='conclusions'></a>
-# ## Conclusions
-# 
-# In conclusions, We found the main factors that affect patient show up by wrangling the data, Also, We encounter some limits on data usability when we first obtain it like wrong and missing values and we solved that by cleaning the data and finally we moved to explore our data by answering 6 of our questions and creating visualizations for them.
-# 
-# ### Limitations
-# 
-# there is a few limitations of our dataset:
-# 
-# - It would be interesting if there is a column for review or rate for the previous appointment.
-# - It would be more accurate if the appointment time provided with appointment data.
-# - It would be interesting if we know the individual education for each appointment.
-
-# <a id='bibliography'></a>
-# ## Bibliography
-# 
-# [1] https://www.udacity.com/
-# 
-# [2] https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.plot.html
-# 
