@@ -10,6 +10,15 @@ On this project, we aimed to explore the 'Medical Appointment No Shows' dataset 
 <li><a href="#bibliography">Bibliography</a></li>    
 </ul>
 
+## Setup
+In order to run the notebook, you'll need to install:
+- Python 3.6
+- Jupyter (notebook or lab)
+- Pandas
+- Numpy
+- Matplotlib
+
+This notebook will not be maintained.
 
 <a id='intro'></a>
 ## Introduction
